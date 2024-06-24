@@ -1,0 +1,25 @@
+/**
+ * Estudo das variaveis
+ * @author melo
+ */
+
+console.clear()
+console.log("const______")
+const nome = "Izaak Samuel"
+console.log(typeof(nome))
+console.log(nome)
+//nome = "Samuel Gadelha"
+console.log("let_____________")
+let linguagem = "Java"
+console.log(linguagem)
+linguagem = "javascript"
+console.log(linguagem)
+//let linguagem = "python"
+//console.log(linguagem)
+console.log("var_________________")
+var time = "Cortinas"
+console.log(time)
+time = "palmeiras"
+console.log(time)
+var time = "Vasco" // Atenção! BUGS NO USO DO VAR
+console.log(time)
