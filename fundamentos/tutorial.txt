@@ -1,170 +1,146 @@
-[sexta-feira 22:10] SAMUEL GADELHA
 Boas Praticas na programação:
- 
+
 1) Documentação
-
 /**
-
 * Descrição do codigo (o que faz?)
-
 * @author Nome do autor do código
-
 * @link https://...
-
 */
- 
+
 2) Codigo limpo
-
 - não abusar de comentarios
- 
+
 3) Nomeação:
-
    - não usar caracteres especiais, espaço e acentos
-
    - Nomes de arquivos, variaveis, funções devem ser escritos com a primeira letra
-
    em minusculo, iniciar com CAPSLOCK (letra maiscula)
-
    apenas classes modelos.
-
    - definir nomes que tenham relação com o problema a ser resolvido.
- 
+
 4) Alinhamento (identação do codigo)
- 
+
 5) quanto menos código usado para o problema melhor!
- 
-_______________________________________________
 
+_______________________________________________
 COMANDOS DO TERMINAL:
- 
+
 cls ou clear (limpar a tela do terminal)
-
 node -v (exibe a versão do node)
-
 cd pasta (entrar na pasta)
-
 cd .. (voltar um nivel)
-
 dir ou pwd (listar os arquivos de diretorio)
-
 node arquivo.js (executar arquivo javascript)
-
 seta pra cima (repete comando)
-
 <tab> completa o comando
- 
-________________________________________________
 
+________________________________________________
 VSCode: Dicas
- 
+
 Combinação de teclas <alt><shift><F> //alinhamento do codigo
-
 ________________________________________________
-
 javascript:
- 
+
 caracteristicas:
-
 - Sentenças e nao linhas de codigo
-
 - (;) é opcional
-
 console.clear() //limpar a tela do conseole
-
 console.log() //escrever no console
-
 //comentarios de linhas
-
 podemos usar aspas " " ou ' ' 
-
 - Não podemos usar aspas diferentes " ' ou ' "
-
 DICA: usar em textos "aspas"
-
       Usar em bibliotecas ou caminhos 'apóstrofe'
- 
+
 _______________________________________________
-
 Operadores:
- 
+
 Observações:
-
 - Regra da precendencia
-
 - % (não calcula porcentagem)
- 
+
 Ex: 
-
 10 |_3_
-
 1    3 // 3.33
-
 10 % 3 // resultado é 1
- 
+
 comparadores de igualdade:
-
 não usar == !=
- 
+
 Operadores logicos
-
 dica:
-
 professorjosedeassis.github.io/simulador
- 
- 
+
+
 ________________________________________________
-
 Estudo das variaveis:
-
 - String    (caracteres)
-
 - Numericas (numeros)
-
 - Booleanas (verdadeiro ou falso)
- 
+
 OBS: no Js as variaveis são dinamicamente tipadas
-
 const (criar constante)
-
 var ou let (criar uma variavel)
-
 ATENÇÃO!!! nao usar jamais o var
- 
- 
-Git e Github
 
+Tipagem dinamica:
+no Javascript o tipo string é definido quando o conteudo da variavel estiver entre aspas
+
+variaveis numericas podem ser numeros inteiros e nao inteiros
+OBSERVAÇÃO, (virgula é um caractere e nao numero, )
+se necessario converter a entrada de dados de "," para "."
+.replace(",",".")
+
+Na entrada de dados numéricos  via terminal ou formulario é necessario converter para numeros
+classe Number
+
+Git e Github
 ##token
 
 
- 
 Configurando o git
-
 -Instalar o git
-
 Abrir o bash
-
 git config --global user.name "izaak Samuel"
-
 git config --global user.email "seu email github"
- 
+
 git clone link_do_repositoria (clonar o repositorio da maquina local)
- 
+
 git status (verifica o status do repositorio local em relação ao github)
- 
+
 OBSERVAÇÃO: digitar os comandos na raíz do repositorio
-
 git add . (adiciona  todas as alterações)
-
 git commit -m "fundamentos"
-
 git push
- 
- 
-     
- 
- 
 
 
-     
 
 
+
+24/06/2024
+
+NODE - Plataforma para uso do jS fora do browser (navegador)
+|__ V8 (google chromium)
+|__ bibliotecas C / C++
+|__ pacotes npm (node packager manager)
+npm ls (lista pacotes)
+npm i ou npm install(instala um pacote)
+npm r nome_do_pacote (remove o pacote)
+
+pacote = modulos = bibliotecas
+Para usar um pacote é necessario fazer a importacao no inicio do código (log abaixo do cabeçalho de documentação)
+
+__________________________________________________________________________________________________________________________
+Algoritmo: "receita de bolo"
+
+Exemplo 1:
+Objetivo: Calcular a média de 2 notas
+
+                  Nota 1 + nota 2
+média = _____________________________
+                       2
+
+Variaveis: nota1,nota2,media 
+
+Entrada:nota1,nota2
+Processamento: media=(nota1 + nota2) /2
+Saída: media
