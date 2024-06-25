@@ -1,0 +1,21 @@
+/**
+ *  Cálculo da média de 2 notas
+ * @author Samuel
+ */
+
+// importar o pacote readline-sync (input no console)
+const input = require (`readline-sync`)
+
+//variaveis
+let nota1,nota2,media
+
+console.clear
+console.log("calculo da média")
+// captura de notas pelo pacote readline-sync
+//entrada
+nota1 = Number(input.question("digite nota 1="))
+nota2 = Number(input.question("digite nota 2="))
+// Média
+media = (nota1+ nota2) / 2
+//saida
+console.log(` média: ${media.toFixed(1)}`)
