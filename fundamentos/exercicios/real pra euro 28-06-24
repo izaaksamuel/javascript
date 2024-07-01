@@ -1,0 +1,20 @@
+/**
+ *  Cálculo da média de 2 notas
+ * @author Samuel
+ */
+
+// importar o pacote readline-sync (input no console)
+const input = require (`readline-sync`)
+
+//variaveis
+let real,euro,total
+console.clear
+console.log("real")
+console.log("euro")
+
+real= Number (input.question('real '))
+euro= Number (input.question('euro '))
+total = real / euro 
+
+
+console.log(` ${real.toFixed(2)} reais  equivalem a ${total.toFixed(2)} euros `)
