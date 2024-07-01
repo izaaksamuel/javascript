@@ -17,3 +17,4 @@ total = pes * metros
 
 
 console.log(` ${pes.toFixed(1)} pés  equivalem a ${total.toFixed(4)} metros `)
+.
