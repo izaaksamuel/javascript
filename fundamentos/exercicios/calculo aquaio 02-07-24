@@ -1,0 +1,22 @@
+/**
+ *  Cálculo volume de um aquario
+ * @author Samuel
+ */
+
+// importar o pacote readline-sync (input no console)
+const input = require (`readline-sync`)
+
+//variaveis
+let altura,comprimento,largura,litros
+
+console.clear
+console.log("comprimento em cm")
+console.log("altura em cm")
+console.log("largura em cm")
+
+comprimento = Number (input.question('comprimento em cm '))
+altura = Number (input.question('altura em cm '))
+largura = Number (input.question('largura em cm '))
+litros = (comprimento * altura * largura)  / 1000
+
+console.log(`o aquario tem capacidade para ${litros} litros`)
