@@ -1,0 +1,21 @@
+/**
+ *  Cálculo da média de 2 notas
+ * @author Samuel
+ */
+
+// importar o pacote readline-sync (input no console)
+const input = require (`readline-sync`)
+
+//variaveis
+let tijolo,metro,preço
+
+console.clear
+console.log("m²")
+console.log("numero de tijolos")
+console.log("valor tijolo")
+
+metro = Number (input.question('m²: '))
+tijolo = (metro * 28) 
+preco = (tijolo * 1)  
+
+console.log(` ${metro} m² dão um total de ${tijolo} tijolos e custa R$ = ${preco.toFixed(2)}`)
