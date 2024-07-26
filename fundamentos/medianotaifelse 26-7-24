@@ -4,7 +4,7 @@
  */
 
 const input = require('readline-sync')
-
+const colors = require("colors")
 
 let nota1
 let nota2
@@ -19,7 +19,7 @@ media = (nota1 + nota2) /2
 //uso da estutura para validar a idade
 console.clear()
 if (media>4.99) {
-    console.log("aprovado")
+    console.log("aprovado".blue)
 } else {
-    console.log("reprovado")
+    console.log("reprovado".red)
 }
