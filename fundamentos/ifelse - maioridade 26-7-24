@@ -1,0 +1,21 @@
+/**
+ * Estudo da estrutura de controle if else
+ * @author
+ */
+
+const input = require('readline-sync')
+
+
+let idade
+
+console.log("Estudo da estrutura if else")
+console.log("validar maioridade")
+idade = Number(input.question("Digite a sua idade: "))
+
+//uso da estutura para validar a idade
+console.clear()
+if (idade<18) {
+    console.log("Menor de idade")
+} else {
+    console.log("Maior de idade")
+}
