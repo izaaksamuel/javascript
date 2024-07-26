@@ -1,0 +1,25 @@
+/**
+ * Estudo da estrutura de controle if else
+ * @author
+ */
+
+const input = require('readline-sync')
+
+
+let nota1
+let nota2
+let media
+
+console.log("Estudo da estrutura if else")
+console.log("resultado final")
+nota1 = Number(input.question("nota 1: "))
+nota2 = Number(input.question("nota 2: "))
+media = (nota1 + nota2) /2
+
+//uso da estutura para validar a idade
+console.clear()
+if (media>4.99) {
+    console.log("aprovado")
+} else {
+    console.log("reprovado")
+}
