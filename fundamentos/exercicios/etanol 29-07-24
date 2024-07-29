@@ -1,0 +1,25 @@
+/**
+ * Estudo da estrutura de controle if else
+ * @author
+ */
+
+const input = require('readline-sync')
+const colors = require("colors")
+
+let etanol
+let alcool
+
+
+console.log("")
+console.log("resultado final")
+etanol = Number(input.question("preco etanol: "))
+alcool = Number(input.question("preco alcool: "))
+
+
+//uso da estutura para validar a idade
+console.clear()
+if (etanol< alcool * 0,7) {
+    console.log("abastecer com etanol".green)
+} else {
+    console.log("abastecer com gasolina".blue)
+}
