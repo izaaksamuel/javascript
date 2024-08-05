@@ -1,0 +1,24 @@
+/**
+ * Estudo da estrutura de controle if else
+ * @author
+ */
+
+const input = require('readline-sync')
+const colors = require("colors")
+
+let idade
+
+console.log("Estudo da estrutura if else")
+console.log("resultado final")
+idade = Number(input.question("idade do cidadao: "))
+
+
+
+// exemplo de uso da estrutura if - esle-if
+if(idade<16 ) {
+    console.log("nao vota".blue)
+} else if(idade ===16 || idade ===17 || idade > 71) {
+    console.log("vota se quiser".yellow)
+}else {idade <=15
+    console.log("tem que votar".red)
+}
