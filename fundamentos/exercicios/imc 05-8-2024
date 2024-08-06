@@ -31,6 +31,8 @@ console.log(`idade: ${idade} `)
 console.log(`peso: ${peso} `)
 console.log(`altura: ${altura}cm `)
 console.log(`imc: ${imc.toFixed(2)} `)
+
+console.log(`-------------------------------------------------------`)
 if(imc<16.9) {
     console.log("muito abaixo do peso".red)
 } else if(imc >=17 && imc <=18.4) {
