@@ -1,0 +1,55 @@
+/**
+ * Cálculo do IMC
+ * @author SamuelGadelha
+ */
+
+const colors = require('colors')
+const input = require('readline-sync')
+
+console.clear()
+//variaveis
+let nome, peso,altura, imc
+console.clear()
+
+
+console.log("  ___ __  __  ___ ")
+console.log(" |_ _|  \\/  |/ __|")
+console.log("  | || |\\/| | (__ ")
+console.log(" |___|_|  |_|\\___|")
+console.log("")
+nome= input.question("Digite seu nome: ")
+idade= Number(input.question("Digite sua idade: "))
+peso= Number(input.question("Digite seu peso em KG: ").replace(",","."))
+altura= Number(input.question("Digite a sua altura em cm: ").replace(",", "."))
+imc = peso / ((altura / 100) * (altura / 100))
+ 
+console.clear()
+console.log(`-------------------------------------------------------`)
+console.log(`Ficha do aluno. `.italic.bold)
+console.log(`nome: ${nome} `)
+console.log(`idade: ${idade} `)
+console.log(`peso: ${peso} `)
+console.log(`altura: ${altura}cm `)
+console.log(`imc: ${imc.toFixed(2)} `)
+if(imc<16.9) {
+    console.log("muito abaixo do peso".red)
+} else if(imc >=17 && imc <=18.4) {
+    console.log("abaixo do peso".yellow)
+} else if(imc >=18.5 && imc <=24,9) {
+    console.log("peso normal".blue)
+} else if (imc >=25 && imc <=29,9) {
+     console.log("acima do peso".yellow)
+}else if (imc >=30 && imc <= 34,9) {
+     console.log("obesidade grau 1".yellow)
+}else if (imc >=35 && imc <= 40) {
+    console.log("obesidade grau 2".yellow)
+}else {
+    console.log("obesidade grau 3".red)
+}
+
+
+
+
+
+
+
