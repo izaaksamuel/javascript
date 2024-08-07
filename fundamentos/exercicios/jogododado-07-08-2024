@@ -1,0 +1,17 @@
+/**
+ * jogo do dado
+ * @author SamuelGadelha
+ */
+
+constinput= require('readline-sync')
+let face
+
+console.clear()
+console.log("jogo do dado")
+console.log("face do dado :")
+//sorteio da face de um dado
+// Math classe matematica
+// .floor(conversao para numeros inteiros)
+//.random() *6 (gerador de numeros aleatorios 0 1 2 3 4 5 )
+face = Math.floor(Math.random() * 6 + 1)
+console.log(`face do dado: ${face}`)
