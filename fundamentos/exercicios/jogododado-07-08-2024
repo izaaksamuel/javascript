@@ -1,17 +1,43 @@
 /**
- * jogo do dado
+ * exemplo switch case
  * @author SamuelGadelha
  */
 
-constinput= require('readline-sync')
+const input = require('readline-sync')
+
 let face
 
 console.clear()
-console.log("jogo do dado")
-console.log("face do dado :")
-//sorteio da face de um dado
-// Math classe matematica
-// .floor(conversao para numeros inteiros)
-//.random() *6 (gerador de numeros aleatorios 0 1 2 3 4 5 )
-face = Math.floor(Math.random() * 6 + 1)
+
+console.log(" jogo do dado")
+input.question(" pressione a tecla [Enter] para jogar o Dado")
+face = Math.floor(Math.random() * 6) 
 console.log(`face do dado: ${face}`)
+switch (face) {
+    case 0:
+        console.clear()
+        console.log("face 1 ⚀")
+        break
+
+    case 1:
+        console.clear()
+        console.log("face 2 ⚁")
+        break
+    case 2:
+        console.clear()
+        console.log("face 3 ⚂")
+        break
+    case 3:
+        console.clear()
+        console.log("face 4 ⚂")
+        break
+    case 4:
+        console.clear()
+        console.log("face 5⚃")
+        break
+    case 5:
+        console.clear()
+        console.log("face 6 ⚄")
+        break
+
+}
