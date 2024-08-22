@@ -1,0 +1,75 @@
+
+//Classe modelo (abstração)
+console.clear()
+class modelo {
+    //atributos
+    constructor(ano, cor ) {
+        this.ano= ano //this  esta falando que é uma variável
+        this.cor= cor
+    }
+    //métodos
+    criarmodelo() {
+        console.log("------------------------------------")
+        console.log(`carro de  ${this.ano}`)
+        console.log(`cor: ${this.cor}`)
+    }
+    ligar() {
+        console.log(`ligar o celta de ${this.ano} `)
+    }
+    desligar() {
+        console.log(" desligando carro...")
+    }
+    acelerar() {
+        console.log(`acelerando...`)
+    }
+}
+//Classe modelo com herança(extends)
+class Aviao extends carro {
+    //atributos
+    constructor(ano, cor, acelerar, envergadura) {
+        super(ano, cor) // super é da classe superior
+        this.aterrizar = aterrizar
+    }
+    //métodos
+    criarAviao() {
+        console.log("------------------------------------")
+        console.log(`aviao do ano ${this.ano}`)
+        console.log(`Da cor ${this.cor}`)
+    }
+    aterrizar() {
+        console.log("._._._. pousando")
+        if (this.aterrizar === true) {
+            console.log("*** aterrizagem completa ***")
+        }
+    }
+    //polimorfismo (sobrescrita de um método existente)
+    acelerar() {
+        console.log("decolando...")
+    }
+}
+// Criação do Mundo
+console.clear()
+//Criando um objeto (carro preto)
+const modelo1 = new Modelo(1992, "preto")
+modelo1.criarModelo()
+modelo1.ligar()
+//Criando um objeto (carro cinza)  
+const modelo2 = new Modelo(1997, "cinza")
+modelo2.criarModelo()
+modelo2.acelerar()
+//Criando um objeto (carro branco)
+const modelo3 = new Modelo(1999, "branco")
+modelo3.criarModelo()
+modelo3.desligar()
+//Criando um aviao branco
+const aviao1 = new Aviao(2015, "branco", false)
+aviao1.criarAviao()
+aviao1.aterrizar()
+//Criando um aviao azul
+const aviao2 = new Aviao(2009, "azul", true)
+aviao2.criarAviao()
+aviao2.aterrizar()
+//Criando um aviao vermelho (polimorfismo)
+const aviao3 = new Aviao(2011, "vermelho", true)
+aviao3.criarAviao()
+aviao3.acelerar()
