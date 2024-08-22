@@ -1,7 +1,10 @@
-
+/**
+ * aviao e carro
+ * @author samuel gadelha
+ */
 //Classe modelo (abstração)
 console.clear()
-class modelo {
+class Modelo {
     //atributos
     constructor(ano, cor ) {
         this.ano= ano //this  esta falando que é uma variável
@@ -24,11 +27,11 @@ class modelo {
     }
 }
 //Classe modelo com herança(extends)
-class Aviao extends carro {
+class Aviao extends Modelo {
     //atributos
     constructor(ano, cor, acelerar, envergadura) {
         super(ano, cor) // super é da classe superior
-        this.aterrizar = aterrizar
+        this.envergadura = envergadura
     }
     //métodos
     criarAviao() {
@@ -51,15 +54,15 @@ class Aviao extends carro {
 console.clear()
 //Criando um objeto (carro preto)
 const modelo1 = new Modelo(1992, "preto")
-modelo1.criarModelo()
+modelo1.criarmodelo()
 modelo1.ligar()
 //Criando um objeto (carro cinza)  
 const modelo2 = new Modelo(1997, "cinza")
-modelo2.criarModelo()
+modelo2.criarmodelo()
 modelo2.acelerar()
 //Criando um objeto (carro branco)
 const modelo3 = new Modelo(1999, "branco")
-modelo3.criarModelo()
+modelo3.criarmodelo()
 modelo3.desligar()
 //Criando um aviao branco
 const aviao1 = new Aviao(2015, "branco", false)
